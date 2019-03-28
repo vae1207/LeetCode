@@ -13,3 +13,11 @@
                 cnt += 1
             
         return ret
+
+    
+    
+ 或者：
+    def majorityElement(self,nums):
+         
+        nums.sort()
+        return nums[len(nums)/2]
