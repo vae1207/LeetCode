@@ -1,0 +1,18 @@
+public static boolean findTarget(int array[], int target){
+  if(array==null || array.length == 0){
+        return false;
+  }
+  int row=0;
+  int column = array[0].length - 1;
+  while(column >= 0 && row < array.length){
+     if(array[row][column] == target){
+          return true;
+     }
+     if(array[row][column] > target){
+        column -- ;
+     }else{
+        row++;
+     }
+  }
+  return false;
+}
