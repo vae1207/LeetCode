@@ -1,0 +1,12 @@
+public ArrayList<Integer> printListFromTailToHead(ListNode listnode){
+	ArrayList<Integer> list = new ArrayList<>();
+	Stack<list> stack = new Stack<>();
+	While(headNode!=null){
+		stack.push(headNode)
+		headNode = headNode.next;
+	}
+	while(stack !=isEmpty){
+		list.add(stack.pop().val);
+	}
+	return list;
+}
